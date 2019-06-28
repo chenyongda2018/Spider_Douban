@@ -1,13 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = "https://movie.douban.com/top250"
-
 '''
- https://movie.douban.com/top250?start=25&filter=
- https://movie.douban.com/top250?start=50&filter=
- ...
- 一共10条url,一页25条数据
+爬取豆瓣TOP250电影信息,图片
 '''
 
 urls = [' https://movie.douban.com/top250?start=' + str(n) + "&filter=" for n in range(0, 250, 25)]
