@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>豆瓣美剧TOP200</title>
+</head>
+<body>
+    <table border="1">
+        {% for record in records %}
+            <tr>
+                <td>{{record['title']}}</td>
+                <td>{{record['rate']}}</td>
+                <td>{{record['tag']}}</td>
+                <td style="display:none;">{{record['id']}}</td>
+                <td ><a href="/douban/delete/{{int(record['id'])}}"> <input type="button" value="删除" ></a></td>
+            </tr>
+        {% end %}
+
+    </table>
+</body>
+</html>

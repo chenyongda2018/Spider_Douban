@@ -1,5 +1,3 @@
-# Python爬虫豆瓣电影
-
 <a name="e9fc8413"></a>
 # Python爬取豆瓣Top250电影信息
 
